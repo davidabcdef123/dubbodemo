@@ -12,7 +12,7 @@ public class Consumer {
                 new String[] { "applicationContext.xml" });
         context.start();
 
-        TestRegistryService demoService = (TestRegistryService) context.getBean("demoService");
+        TestRegistryService demoService = (TestRegistryService) context.getBean("testRegisterServiceImpl");
         String hello = demoService.hello("zhangsan");
         System.out.println(hello);
 
